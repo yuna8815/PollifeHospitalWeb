@@ -1,0 +1,39 @@
+$body-font-family: 'Spoqa Han Sans Neo', sans-serif;
+$font-size-root: 13px;
+
+$material-light: (
+  'text': (
+    'primary': #333,
+  ),
+  'text-color': #333,
+  'primary-text-percent': 1,
+);
+
+$container-max-widths: (
+  'md': 100%,
+  'lg': 100%,
+  'xl': 100%
+);
+$btn-sizes: (
+  // 'x-small': 20,
+  'small': 40,
+  'default': 48,
+  // 'large': 44,
+  // 'x-large': 52
+);
+$btn-font-sizes: (
+  // 'x-small': .625rem,
+  'small': 14px,
+  'default': 18px,
+  // 'large': .875rem,
+  // 'x-large': 1rem
+);
+$btn-letter-spacing: 0;
+$btn-focus-opacity: 0;
+
+$text-field-filled-full-width-outlined-slot-min-height: 48px;
+$text-field-enclosed-details-padding: 0 16px;
+$text-field-enclosed-prepend-append-margin-top: 11px;
+$text-field-dense-append-prepend-margin: 4px;
+
+$stepper-header-elevation: 0;

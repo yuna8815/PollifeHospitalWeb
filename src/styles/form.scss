@@ -1,0 +1,15 @@
+// 회원가입 등 전체 페이지 form 스타일
+.full-form {
+  margin-right: 370px;
+  .v-subheader {
+    padding: 0 28px;
+    color: var(--v-grey-base) !important;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: right;
+  }
+  .text-field {
+    width: 460px;
+  }
+}

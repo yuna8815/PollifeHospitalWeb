@@ -1,0 +1,46 @@
+.theme--light.v-stepper {
+  .v-stepper__step__step {
+    background: var(--v-grey-lighten4) !important;
+    .v-icon.v-icon {
+      font-size: 10px !important;
+      font-style: normal;
+    }
+  }
+  .v-stepper__label {
+    font-size: 10px;
+    color: var(--v-grey-lighten4) !important;
+  }
+  .v-stepper__step--active {
+    .v-stepper__step__step {
+      color: var(--v-primary-base) !important;
+      border: solid 1px var(--v-primary-base);
+      background-color: transparent !important;
+    }
+    .v-stepper__label {
+      text-shadow: inherit !important;
+      color: var(--v-grey-base) !important;
+    }
+  }
+  .v-stepper__step--complete {
+    .v-stepper__step__step {
+      color: var(--v-primary-base) !important;
+      background-color: var(--v-primary-base) !important;
+    }
+    .v-stepper__label {
+      text-shadow: inherit !important;
+      color: var(--v-grey-base) !important;
+    }
+  }
+  .v-stepper__header .v-divider {
+    border-color: var(--v-grey-lighten4) !important;
+  }
+  .v-stepper__header .v-stepper__step--complete + .v-divider {
+    border-color: var(--v-grey-base) !important;
+  }
+}
+
+@media only screen and (max-width: 959.98px) {
+  .v-stepper:not(.v-stepper--vertical) .v-stepper__label {
+    display: block !important;
+  }
+}

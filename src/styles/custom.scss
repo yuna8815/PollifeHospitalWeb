@@ -1,0 +1,89 @@
+@import './textfield.scss';
+@import './button.scss';
+@import './stepper.scss';
+@import './form.scss';
+@import './table.scss';
+
+html {
+  min-width: 1280px;
+  overflow-x: auto;
+}
+.v-chip {
+  &.v-chip--outlined.v-size--small {
+    height: 16px;
+    padding: 0 4px;
+    font-size: 10px;
+    color: var(--v-grey-lighten5);
+    border-color: var(--v-grey-lighten4);
+    border-radius: 4px;
+    &.v-chip--disabled {
+      opacity: 1;
+      color: var(--v-grey-lighten3);
+      border-color: var(--v-grey-lighten3);
+    }
+  }
+  &__content {
+    button {
+      background: #000;
+      border-radius: 50%;
+      color: #F2F2F2 !important;
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+.v-menu__content {
+  .v-list {
+    padding: 12px !important;
+    border: 1px solid var(--v-grey-lighten4) !important;
+    border-radius: 4px !important;
+    .v-list-item {
+      min-height: 40px;
+      padding: 0;
+      .v-list-item__title {
+        font-size: 14px;
+        color: black;
+      }
+    }
+  }
+  &:not(.elevation-0) {
+    box-shadow: 0px 4px 4px 0px #00000040 !important;
+  }
+}
+
+.v-select.v-select--is-menu-active .v-input__icon--append .v-icon.mdi-magnify {
+  transform: none !important;
+}
+
+.checkup-list-filter .v-input--checkbox {
+  .v-label {
+    color: var(--v-grey-base);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+  &.font-weight-light .v-label {
+    color: var(--v-grey-lighten5);
+    font-weight: 300;
+  }
+  &.red--text .v-label {
+    color: rgba(237, 27, 47, 0.6);
+  }
+}
+.v-input--checkbox.withdrawal-agree {
+  margin-top: 0;
+  .v-input--selection-controls__input {
+    margin-right: 16px;
+  }
+  .v-input__slot i {
+    font-size: 28px;
+  }
+  .v-label {
+    display: block !important;
+    span {
+      text-decoration: underline;
+      font-size: 13px !important;
+    }
+  }
+}

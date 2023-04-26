@@ -1,0 +1,43 @@
+.v-input__slot fieldset {
+  background: #fff;
+}
+.v-text-field--outlined:not(.v-input--is-focused):not(.v-input--has-state) > .v-input__control > .v-input__slot fieldset {
+  color: var(--v-grey-lighten3) !important;
+}
+.v-input input {
+  color: black !important; 
+  &::placeholder {color: var(--v-grey-lighten4) !important;}
+}
+.v-input--checkbox .theme--light {
+  &.v-icon {
+    color: var(--v-grey-lighten4);
+  }
+  &.v-label {
+    font-size: 13px;
+    color: black;
+  }
+}
+
+.v-text-field.v-text-field--outlined .v-messages .theme--light.v-icon {
+  color: inherit !important;
+}
+.v-text-field.v-text-field--outlined .theme--light.v-icon {
+  color: var(--v-grey-lighten4) !important
+}
+
+.v-input.v-input--dense.v-text-field:not(.v-text-field--outlined) {
+  margin-top: 0;
+  &.v-input--is-readonly .v-input__slot:before {
+    border-color: transparent;
+  }
+  .v-input__slot {
+    height: 36px;
+    &:before {
+      border-color: var(--v-grey-lighten4);
+    }
+  }
+  &.v-input--is-disabled .v-input__slot::before {
+    border-image: 0 !important;
+    border-color: var(--v-grey-lighten3) !important;
+  }
+}

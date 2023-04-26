@@ -1,0 +1,19 @@
+.theme--light.v-btn.v-btn--disabled.v-btn--has-bg.v-size--small,
+.theme--light.v-btn.v-btn--disabled.v-btn--has-bg.v-size--default {
+  color: var(--v-grey-lighten4) !important;
+  background-color: #F2F2F2 !important;
+}
+.v-btn.v-btn--outlined {
+  color: var(--v-grey-base) !important;
+  border-color: var(--v-grey-lighten4) !important;
+  background-color: white;
+}
+.v-btn.v-btn--text.v-size--small {
+  min-width: 0 !important;
+  height: auto !important;
+  padding: 0 !important;
+  text-decoration: underline;
+  &::before {
+    background-color: transparent !important;
+  }
+}
